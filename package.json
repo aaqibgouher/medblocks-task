@@ -1,6 +1,6 @@
 {
   "name": "medblocks_task",
-  "homepage": "https://<your-github-username>.github.io/<repo-name>",
+  "homepage": "https://github.com/aaqibgouher/medblocks-task.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.0",

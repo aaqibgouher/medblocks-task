@@ -1,12 +1,73 @@
-# React + Vite
+# Medblocks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+Build a frontend-only patient registration app using Pglite for data storage. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## System Requirements
+Ensure your system meets the following requirements before proceeding:
 
-## Expanding the ESLint configuration
+- **Node.js**: v21.2.0 or higher
+- **npm/yarn**: Latest version
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS
+- **Database**: PGLite
+
+## Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aaqibgouher/medblocks-task.git
+
+### Frontend (FE)
+
+1. Change directory:
+    ```bash
+    cd medblocks-task
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the clinet:
+    ```bash
+   npm run dev
+
+## DB Schema
+We have just one table called patients, where we hold all patients records.
+
+```js
+const questionSchema = {
+        id: {
+            type: UUID,
+            required: true,
+        },
+        name: {
+            type: String,
+            required: true,
+        },
+        age: {
+            type: Integer,
+            required: true,
+        },
+        gender: {
+            type: String,
+            required: true,
+        },
+        email: {
+            type: String,
+            required: true,
+        },
+        address: {
+            type: String,
+            required: true,
+        },
+        symptoms: {
+            type: String,
+            required: true,
+        },
+        symptoms: {
+            type: Date,
+            required: true,
+        },
+    };

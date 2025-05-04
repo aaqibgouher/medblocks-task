@@ -20,7 +20,7 @@ const AppRoutes = () => {
         draggable
         pauseOnHover
       />
-      <Router basename="/medblocks-task">
+      <Router>
         <Routes>
           {/* Main */}
           <Route path="/" element={<MainLayout />}>
